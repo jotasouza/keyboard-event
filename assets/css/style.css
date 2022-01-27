@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 668px;
+    background: linear-gradient(0, #120c56, #000000)
+}
+
+.moon{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: -250px 50px 75px wheat,
+    -250px 50px 75px rgb(245, 123, 102),
+    -250px 50px whitesmoke;
+    z-index: 4;
+    float: right;
+}
+
+
+
+.clouds{
+    background:transparent url(../img/clouds3.png) repeat top center;
+    z-index:1;
+
+    animation:move-clouds-back 200s linear infinite;
+}
+
+.clouds {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+#box{
+    width: 200px; 
+    height: 200px;
+    position: absolute; 
+    background-image: url(../img/thor.png); 
+    left: 500px; 
+    top: 300px;
+    z-index: 2;
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+
+@keyframes move-stars-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
